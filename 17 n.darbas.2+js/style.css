@@ -1,0 +1,53 @@
+/* . Switch užduotis:
+
+1. Ar atsimenat paskutinį IF-ELSE pratimą? Būtent jį efektyviau apsirašyti su Switch, pasibandykime:
+
+Sukurkite variable 'car', kuris bus lygus kažkokiam automobilio prekės ženklui. Aprašykite Switch, kuris pasakys ar tas brand'as priklauso VW Group, ar BMW Group, ar nei vienam.
+
+VW group priklauso: VW, Audi, Bentley, Bugatti, Lamborghini, Porsche.
+
+BMW group priklauso: BMW, Mini, Rolls-Royce.
+
+2. Sukurkite variable 'userInput' ir pradžioje prilyginkite 'Obuolys'. Su Switch statement apsirašyk, kad 'userInput' reikmšmė yra - vaisius ar daržovė. Pridėkite bent 5 kiekvienos kategorijos (trūksta idėjų? Wiki į pagalbą: vaisiai, daržovės).
+
+3. Kokia šiandien diena? Sukurkite variable 'weekDay', kuris būtų lygus skaičiui - savaitės dienai, skaičiuojant nuo 0 (t.y. pirmadienis - 0; antradienis - 1; trečiadienis - 2 ir t.t.). Parašykite Switch statement, kuris paimtų skaičių ir jį pakeistų (ne sukurtų naują kintamąjį, o pakeistų 'weekDay' reikšmę) į savaitės dieną žodžiu. Vėliau, atspausdink kintamąjį. */
+
+/* 1 uzduotis */
+var car = "audi"
+  /* car = car.toLocaleUpperCase("vw, audi, bentley, bugatti, lamborghini, porsche, bmw, mini, rolls-royce")  */
+ /* var car = prompt("Įveskite atomobilio brand'ą") 
+
+switch("car") {
+ case "VW":
+ case "Audi":
+ case "Bentley":
+ case "Bugatti":
+ case "Lamborghini":
+ case "Porsche":
+alert("Automobilis priklauso VW group")
+break
+case "BMW":
+case "Mini": 
+case "Rolls-Royce": 
+alert ("Automobilis priklauso BMW group")
+break
+default: alert ("Šis automobilis nepriklauso nei VW, nei BMW group")
+} */
+
+/* 3 uzduotis */
+var weekDay = 0
+var weekDay = prompt("Užrašykite savaitės dieną")
+while(weekDay < 7){
+  weekDay = weekDay + 1
+  console.log(weekDay) 
+ }
+ switch("weekDay"){
+  case "pirmadienis - 0": 
+  case "antradienis - 1":
+  case "trečiadienis - 2": 
+  case "ketvirtadienis - 3": 
+  case "penktadienis - 4": 
+  case "šeštadienis - 5": 
+  case "sekmadienis - 6": 
+  console.log(" Savaitės diena yra" + weekDay)
+} 
